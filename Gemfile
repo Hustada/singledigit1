@@ -4,7 +4,6 @@ source 'https://rubygems.org'
 
 
 gem 'rails', '4.1.4'
-gem 'sqlite3'
 gem 'sass-rails', '~> 4.0.3'
 gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.0.0'
@@ -23,7 +22,7 @@ gem 'mini_magick'
 
 gem 'bcrypt', '~> 3.1.7', require: 'bcrypt'
 
-gem 'unicorn'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
@@ -35,7 +34,18 @@ gem 'unicorn'
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
-gem 'rails_12factor', group: :production
-gem 'pg', group: :production
+group :development, :test do
+  gem 'factory_girl_rails'
+  gem 'rspec-rails'
+  gem 'sqlite3'
+
+end
+
+group :production do
+  gem 'unicorn'
+  gem 'pg'
+  gem 'rails_12factor'
+end
+
 
 ruby "2.1.4"
