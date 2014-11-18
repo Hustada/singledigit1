@@ -18,7 +18,7 @@ class PostsController < ApplicationController
   def create
     @post = Post.new(post_params)
   if @post.save
-    flash[:notice] = "Your fucking post has been created BITCH!"
+    flash[:notice] = "Your post has been created"
     redirect_to @post
   end
 end
