@@ -1,0 +1,77 @@
+<% @posts.each do |post| %>
+<div class = "row">
+          <div class = "col-md-9">
+            <h2><%= link_to post.title, post_path(post) %></h2>
+            <!-- <img src="http://lorempixel.com/200/280/sports/8" id = "article-image" class="img-responsive"> -->
+            
+              <p><%= post.text %></a></p>
+              <i class="fa fa-comments"> comments (3)</i> <p><%= link_to "Make a Comment", post_path(post) %></p>
+              <center><%= will_paginate @posts, renderer: BootstrapPagination::Rails %></center>
+              <% end %>
+          </div>
+
+
+          <div class = "col-md-3">
+            <div class = "well" id = "newsletter_well">
+                <h3 id = "newsletter-title">Free Workout Program and Diet!</h3>
+                <div class="input-group">
+                  <span class="input-group-addon"><i class="fa fa-envelope"></i></span>
+                  <input type="text" class="form-control" placeholder="Enter email here">
+                </div>
+                </br>
+                <center>
+                  <button class="btn btn-danger" type="submit">Submit</button>
+                </center>
+            </div>
+          </div>
+
+        </div>
+
+      
+      <h2>Recent Articles</h2>
+      <div class="row">
+        <div class="col-lg-3 col-sm-4 col-xs-6">
+            <a href="#" class="thumbnail">
+              <img src="http://lorempixel.com/150/150/sports/8" class="img-responsive">
+            </a>
+          </div>
+        <div class="col-lg-3 col-sm-4 col-xs-6">
+          <a href="#" class="thumbnail">
+            <img src="http://lorempixel.com/150/150/sports/7" class="img-responsive">
+          </a>
+        </div>
+        <div class="col-lg-3 col-sm-4 col-xs-6">
+          <a href="#" class="thumbnail">
+            <img src="http://lorempixel.com/150/150/sports/6" class="img-responsive">
+          </a>
+        </div>
+        <div class="col-lg-3 col-sm-4 col-xs-6">
+          <a href="#" class="thumbnail">
+            <img src="http://lorempixel.com/150/150/sports/1" class="img-responsive">
+          </a>
+        </div>
+      </div>
+
+        <h2>Popular articles</h2>
+        <div class="row">
+          <div class="col-lg-3 col-sm-4 col-xs-6">
+            <a href="#" class="thumbnail">
+              <img src="http://lorempixel.com/150/150/sports/2" class="img-responsive">
+            </a>
+          </div>
+        <div class="col-lg-3 col-sm-4 col-xs-6">
+          <a href="#" class="thumbnail">
+            <img src="http://lorempixel.com/150/150/sports/3" class="img-responsive">
+          </a>
+        </div>
+        <div class="col-lg-3 col-sm-4 col-xs-6">
+          <a href="#" class="thumbnail">
+            <img src="http://lorempixel.com/150/150/sports/4" class="img-responsive">
+          </a>
+        </div>
+        <div class="col-lg-3 col-sm-4 col-xs-6">
+          <a href="#" class="thumbnail">
+            <img src="http://lorempixel.com/150/150/sports/5" class="img-responsive">
+          </a>
+        </div> 
+       </div>
