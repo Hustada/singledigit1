@@ -38,4 +38,4 @@ gem 'unicorn'
 gem 'rails_12factor', group: :production
 gem 'pg', group: :production
 
-ruby "2.1.1"
+ruby "2.1.4"
