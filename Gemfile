@@ -19,7 +19,7 @@ gem 'will_paginate-bootstrap'
 gem 'sdoc', '~> 0.4.0',          group: :doc
 gem 'spring',        group: :development
 gem 'mini_magick'
-
+gem "font-awesome-rails"
 gem 'bcrypt', '~> 3.1.7', require: 'bcrypt'
 
 
